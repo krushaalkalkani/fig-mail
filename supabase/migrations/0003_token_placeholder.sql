@@ -1,0 +1,12 @@
+-- Fig Mail: store the hash of YOUR app DB token. Do not commit a real token or hash.
+--
+-- 1. Generate a random token locally, e.g.:   openssl rand -hex 32
+-- 2. Put the plaintext token in the FIG_DB_TOKEN env var on Vercel (never in SQL or git).
+-- 3. Replace YOUR_TOKEN_HERE below (or better, run this once in the SQL editor instead of committing it):
+--
+-- insert into private.app_config (k, v)
+-- values ('db_token', encode(sha256('YOUR_TOKEN_HERE'::bytea), 'hex'))
+-- on conflict (k) do update set v = excluded.v;
+--
+-- To rotate: run the same statement with a new token, update FIG_DB_TOKEN on Vercel, and redeploy.
+select 1;
