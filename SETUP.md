@@ -20,6 +20,7 @@ The user asked you to set up Fig Mail by following this file. Do the whole setup
 
 - **Do not ask the user questions.** Make every choice yourself. Stop only when a connect card, an Allow button, or a real blocker needs the user.
 - Do not assume anything exists yet. Check the user's accounts before each step.
+- **Never reuse or change an existing app.** If the user's Vercel or Supabase already has a project named `fig-mail`, leave it untouched: do not change its settings, keys, password, data, or routines. Create new projects with the next free name instead (`fig-mail-2`, `fig-mail-3`, and so on), and use that name in every step below.
 - At the start, send one line: "Setting up your Fig Mail now. This takes about 30 minutes. I'll message you when it's ready."
 - After that, stay quiet until the end, except for a connect card or a blocker.
 - If a step fails, try another way. After two failed tries, tell the user what failed in one line and what they need to do.
