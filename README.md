@@ -5,6 +5,15 @@ Supabase database by a Grok Bot routine; the Next.js app (hosted on Vercel) lets
 archive, trash, and categorize mail, and compose replies. Outgoing mail is queued in an `outbox` table and
 sent by the routine on its next sync.
 
+## Quick start (one message)
+Paste this into any Grok Bot and it sets everything up for you:
+
+```
+Set up Fig Mail for me by following https://github.com/krushaalkalkani/fig-mail/blob/main/SETUP.md
+```
+
+See [`SETUP.md`](SETUP.md). The manual steps are below.
+
 ## Requirements
 - A Grok Bot inbox (and the ability to create a Grok Bot routine)
 - A Supabase project
